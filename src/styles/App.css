@@ -1,0 +1,111 @@
+.app {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: 2rem;
+  color: white;
+}
+
+.app-header {
+  color: #565C64;
+  font-size: 3rem;
+  margin: 1rem;
+}
+.app-main {
+  box-shadow: 10px 10px 20px 0px rgba(86, 92, 100, 0.75);
+}
+.app-footer {
+  position: relative;
+  bottom: 0;
+  color: #565C64;
+  font-size: 1rem;
+  margin: 1rem;
+}
+
+.new-task {
+  display: flex;
+  flex-flow: nowrap row;
+  background-color: white;
+  padding: .5rem 1rem;
+  font-size: 2rem;
+  box-sizing: border-box;
+}
+.input {
+  outline: none;
+  width: 100%;
+  height: 100%;
+}
+.new-task .input {
+  font-size: inherit;
+  border: none;
+}
+
+
+.task-list .icon-ok,
+.task-list .empty-icon {
+  border: 1px solid white;
+  border-radius: 2rem;
+}
+
+.new-task .icon-down-open,
+.new-task .icon-up-open {
+  border: 1px solid white;
+  border-radius: 2rem;
+  color: gray;
+}
+
+.task-footer {
+  display: flex;
+  flex-flow: wrap row;
+  align-items: center;
+  font-size: 1rem;
+  border: 1px solid white;
+  padding: .5rem 1rem;
+}
+
+.items-left {
+  font-size: inherit;
+  width: inherit;
+  height: inherit;
+}
+
+.btn {
+  background-color: inherit;
+  border: 1px solid #282c34;
+  border-radius: .2rem;
+  font-size: inherit;
+  color: white;
+  margin: 0 .2rem;
+}
+
+.btn:hover {
+  border: 1px solid white;
+  border-radius: .2rem;
+}
+
+
+#all.btn {
+  margin-left: 2rem;
+  border: 1px solid white;
+  border-radius: .2rem;
+}
+
+#clear-completed.btn {
+  margin: 0 0 0 auto;
+}
+
+.icon-cancel {
+  margin-right: 0;
+  display: flex;
+  align-items: center;
+}
+
+.icon-cancel:before {
+  color: #282c34;
+  font-size: 2rem
+}
+
+li:hover .icon-cancel:before {
+  color: firebrick;
+}
